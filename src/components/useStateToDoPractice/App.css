@@ -1,0 +1,115 @@
+/* ToDoPractice.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.fixed-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.task-counter {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0404f4;
+  margin-top: 10px;
+  text-align: end;
+}
+
+.form {
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.form input {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  padding: 8px 16px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-list {
+  max-height: calc(100vh - 60px); /* Adjust the height as needed */
+  overflow-y: auto;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: #f8f8f8;
+}
+
+.task span {
+  flex: 1;
+  margin-right: 10px;
+  word-wrap: break-word;
+}
+
+.form-hr {
+  margin: 10px 0;
+  border: 2px;
+  height: 3px;
+  background-color: #f50752;
+}
+
+.task button.delete {
+  background: #f44336;
+}
+
+.edit-button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.task-list li {
+  list-style-type: decimal;
+  margin-bottom: 10px;
+}
+
+.delete-button {
+  background: #f41303;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-text {
+  display: block;
+  font-size: 18px;
+  font-style: oblique;
+  color: #343430;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+}
